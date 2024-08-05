@@ -17,7 +17,7 @@ const MobileNav = () => {
             <Menu className="font-lg text-black " />
           </button>
         </SheetTrigger>
-        <SheetContent className="bg-white drop-shadow-[-100px 0px 30px -10px rgba(0,0,0,0.1)]">
+        <SheetContent side={'left'} className="bg-white drop-shadow-[-100px 0px 30px -10px rgba(0,0,0,0.1)]">
           <div>
             <Link href="/">
               <Image

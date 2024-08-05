@@ -13,7 +13,7 @@ const Header = () => {
                 </div>
                 <Image src="/unimart-transparent 2.png" alt="Logo" width={120} height={100} />
             </div>
-            <div className='flex justify-evenly items-center gap-10'>
+            <div className='flex justify-evenly items-center gap-5'>
                 <div className="hidden md:block">
                     <NavItems />
                 </div>
