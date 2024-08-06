@@ -17,10 +17,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link
+        rel="icon"  
+        href="/unimart-transparent 2?<generated>"
+        type="image/<generated>"
+        sizes="<generated>"
+      />
       <body className={inter.className}>
         <Header />
         {children}
-        </body>
+      </body>
     </html>
   );
 }
