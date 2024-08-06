@@ -3,6 +3,7 @@ import { ShoppingBagIcon } from "lucide-react";
 import { Button } from "./ui/button";
 import CartCard from "./CartCard";
 import { Badge } from "./ui/badge";
+import { Separator } from "./ui/separator";
 
 const CartSlide = () => {
   return (
@@ -17,6 +18,7 @@ const CartSlide = () => {
         </SheetTrigger>
         <SheetContent className="md:min-w-1/2 min-w-full h-full bg-white drop-shadow-[-100px 0px 30px -10px rgba(0,0,0,0.1)] mt-0">
           <h1 className="head-text">Cart</h1>
+          <Separator />
           <div className="overflow-y-auto h-2/3">
             <CartCard />
           </div>
