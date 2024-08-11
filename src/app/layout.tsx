@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({ weight: ["400", "700"], subsets: ["latin"], style: "normal" });
 
 export const metadata: Metadata = {
   title: "Universal Mart",
@@ -18,12 +18,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link
-        rel="icon"  
+        rel="favicon"  
         href="/unimart-transparent 2?<generated>"
         type="image/<generated>"
         sizes="<generated>"
       />
-      <body className={inter.className}>
+      <body className={poppins.className}>
         <Header />
         {children}
       </body>

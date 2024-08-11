@@ -1,9 +1,10 @@
+import CarousalHero from '@/components/CarousalHero';
 import react from 'react';
 
 const Page = () => {
   return (
-    <div className='max-container'>
-      home
+    <div className='container'>
+      <CarousalHero />
     </div>
   )
 }
