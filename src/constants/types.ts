@@ -1,11 +1,12 @@
-export interface NewArrivalItem {
+export interface product {
+    id: string
     image: string
     title: string
     price: number
 }
 
 export interface CartItem {
-    id: number;
+    id: string;
     name: string;
     price: number;
     quantity: number;

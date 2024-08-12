@@ -1,43 +1,15 @@
 import React from 'react'
 import { Button, Card, CardContent, CardHeader } from '@/components'
 import Image from 'next/image'
-import { HeartIcon } from 'lucide-react'
-import { NewArrivalItem } from '@/constants/types'
+import { HeartIcon, ShoppingBagIcon } from 'lucide-react'
+import { product } from '@/constants/types'
 
-const NewArrivalCard = () => {
-        // TODO: Links To product Page after Routing Done
-    const products: NewArrivalItem[] = [
-        {
-            image: '/Unimart.png',
-            title: 'Turmaric powder Pack of 3',
-            price: 1000.00
-        },
-        {
-            image: '/Unimart.png',
-            title: 'Turmaric powder Pack of 3',
-            price: 1000.00
-        },
-        {
-            image: '/Unimart.png',
-            title: 'Turmaric powder Pack of 3',
-            price: 1000.00
-        },
-        {
-            image: '/Unimart.png',
-            title: 'Turmaric powder Pack of 3',
-            price: 1000.00
-        },
-        {
-            image: '/Unimart.png',
-            title: 'Turmaric powder Pack of 3',
-            price: 1000.00
-        },
-        {
-            image: '/Unimart.png',
-            title: 'Turmaric powder Pack of 3',
-            price: 1000.00
-        },
-    ]
+interface CarousalProducts {
+  products: product[]
+}
+
+const CarousalCard: React.FC<CarousalProducts> = ({ products }) => {
+    // TODO: Links To product Page after Routing Done
     return (
         <section className='flex justify-between items-center gap-10'>
             {products.map((card, index) => (
@@ -66,7 +38,7 @@ const NewArrivalCard = () => {
                             </div>
                             <div className="flex justify-between items-center">
                                 <Button size={'xl'} variant={'outline'} className='hover:bg-primary/90 hover:text-white'>
-                                    Add To Cart
+                                    <ShoppingBagIcon className='h-6 w-6 text-slate-700 mr-3' />Add To Bag
                                 </Button>
                             </div>
                         </div>
@@ -77,4 +49,4 @@ const NewArrivalCard = () => {
     )
 }
 
-export default NewArrivalCard
+export default CarousalCard;
