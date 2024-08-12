@@ -2,15 +2,7 @@
 
 import React, { useRef } from "react"
 import Autoplay from "embla-carousel-autoplay"
-
-import { Card, CardContent } from "@/components/ui/card"
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from "@/components/ui/carousel"
+import { Carousel, CarouselContent, CarouselItem } from '@/components';
 import Image from "next/image"
 
 const CarouselHero = () => {
@@ -29,8 +21,8 @@ const CarouselHero = () => {
                 <CarouselItem className="flex justify-center items-center"><Image src={'https://d1iv6qgcmtzm6l.cloudfront.net/banner_desktops/mo8dpf7nHP2BEPDurTRAqfX3xd8pHVePTzh0fsRL.jpg'} alt="Banner 1" width={800} height={200} /></CarouselItem>
                 <CarouselItem className="flex justify-center items-center"><Image src={'https://d1iv6qgcmtzm6l.cloudfront.net/banner_desktops/AwQecmLjoN2Gu9PReNC7CAGh21pUSsfg3BBKyjBF.png'} alt="Banner 1" width={800} height={200} /></CarouselItem>
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            {/* <CarouselPrevious />
+            <CarouselNext /> */}
         </Carousel>
     )
 }

@@ -1,5 +1,4 @@
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import NavItems from "./NavItems";
+import { NavItems, Sheet, SheetContent, SheetTrigger } from '@/components'
 import {
   Menu
 } from "lucide-react"
