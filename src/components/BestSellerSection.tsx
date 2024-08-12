@@ -10,6 +10,7 @@ import {
   ArrowLeft,
   ArrowRight,
   X,
+  HeartIcon
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
