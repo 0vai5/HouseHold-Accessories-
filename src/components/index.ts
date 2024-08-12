@@ -4,7 +4,8 @@ import CartSlide from './CartSlide';
 import Header from './Header';
 import MobileNav from './MobileNav';
 import NavItems from './NavItems';
-import NewArrivalSection from './NewArrivalSection';
+import { NewArrivalSection } from './NewArrivalSection';
+import NewArrivalCard from './NewArrivalCard';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { Input } from './ui/input';
@@ -42,7 +43,9 @@ import {
     CarouselContent,
     CarouselNext,
     CarouselPrevious
-} from './ui/carousel'
+} from './ui/carousel';
+import { BestSellerSection } from './BestSellerSection';
+import BestSellerCard from './BestSellerCard'
 
 export {
     CarousalHero,
@@ -81,5 +84,8 @@ export {
     CarouselItem,
     CarouselContent,
     CarouselNext,
-    CarouselPrevious
+    CarouselPrevious,
+    NewArrivalCard,
+    BestSellerSection,
+    BestSellerCard
 }

@@ -2,22 +2,11 @@ import { X } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react';
 import { Button } from '@/components';
+import { CartItem } from '@/constants/types';
 
 const CartCard: React.FC = () => {
-  // TODO:Interface Designing
-  interface CartItem {
-    id: number;
-    name: string;
-    price: number;
-    quantity: number;
-    image: string;
-    instock: boolean;
-  }
-
   const cart: CartItem[] = [];
-
   // TODO:CartItems Coming from Redux State
-
   return (
     <>
       {cart.length > 0 ? (

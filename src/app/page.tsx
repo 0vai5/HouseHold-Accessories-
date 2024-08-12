@@ -1,11 +1,12 @@
-import { CarousalHero, NewArrivalSection } from '@/components';
+import { CarousalHero, NewArrivalSection, NewArrivalCard, BestSellerCard, BestSellerSection } from '@/components';
 import react from 'react';
 
 const Page = () => {
   return (
     <div className='container'>
       <CarousalHero />
-      <NewArrivalSection />
+      <NewArrivalSection items={[<NewArrivalCard />]} />
+      <BestSellerSection items={[<BestSellerCard />]} />
     </div>
   )
 }

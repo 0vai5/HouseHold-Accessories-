@@ -120,10 +120,12 @@ body:has(.card[data-color="green"]:hover) {
     @apply text-white bg-gradient-to-r from-[#00c6ff] to-[#0072ff] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center;
   }
 
-  .header {
-    @apply flex justify-between items-center sm:px-16 px-4 max-w-full mx-auto sticky top-0 bg-transparent z-10 right-0 left-0;
-  }
-
+ /* Default header style */
+.header {
+  @apply flex justify-between items-center sm:px-16 px-4 max-w-full mx-auto sticky top-0 z-10 right-0 left-0;
+  background: transparent; /* Default background */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
   .footer {
     @apply max-w-full mx-auto flex flex-col ;
   }
@@ -148,10 +150,8 @@ body:has(.card[data-color="green"]:hover) {
     @apply text-black-500 font-extrabold flex-1 text-3xl max-md:text-center;
   }
 }
-
 .glassmorphism {
-  background: rgba(8, 116, 239, 0.07);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(100px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);

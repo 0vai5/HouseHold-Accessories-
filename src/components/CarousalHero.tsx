@@ -15,6 +15,7 @@ const CarouselHero = () => {
             plugins={[plugin.current]}
             onMouseEnter={plugin.current.stop}
             onMouseLeave={plugin.current.reset}
+            className="mb-10"
         >
             <CarouselContent>
                 <CarouselItem className="flex justify-center items-center"><Image src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCY0T8JJ6vmg6edFQQo-EBkeBZoTqiDkTK4bO6yxXXNQ&s'} alt="Banner 1" width={800} height={200} /></CarouselItem>
