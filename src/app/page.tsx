@@ -1,7 +1,7 @@
 import { CarousalHero, NewArrivalSection, CarousalCard, BestSellerSection } from '@/components';
 import { product } from '@/constants/types';
 
-const Page = () => {
+const Home = () => {
   const products: product[] = [
     {
       id: '1',
@@ -56,4 +56,4 @@ const Page = () => {
   );
 }
 
-export default Page;
+export default Home;

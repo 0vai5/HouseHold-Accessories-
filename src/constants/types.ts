@@ -1,18 +1,17 @@
 export interface product {
-    id: string
-    image: string
-    title: string
-    price: number
+    id: string;
+    title: string;
+    image: string;
+    price: number;
     category: string
 }
 
 export interface CartItem {
     id: string;
-    name: string;
+    image: string;
+    title: string;
     price: number;
     quantity: number;
-    image: string;
-    instock: boolean;
 }
 
 export interface CarousalProducts {
@@ -30,3 +29,7 @@ export interface CarouselProps {
     items: JSX.Element[];
     initialScroll?: number;
 }
+
+export interface CartState {
+    items: CartItem[];
+  }
