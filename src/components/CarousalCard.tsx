@@ -26,7 +26,7 @@ const CarousalCard: React.FC<CarousalProducts> = ({ products }) => {
     return (
         <section className='flex justify-between items-center gap-10'>
             {products.map((card, index) => (
-                <Card className='w-[300px]'>
+                <Card key={index} className='w-[300px]'>
                     <Link key={index} href={'/product/' + card.title}>
                         <CardHeader className='w-full h-[300px] md:h-[275px]'>
                             <div className="relative w-full h-full flex justify-center">
