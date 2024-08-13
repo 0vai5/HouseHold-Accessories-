@@ -8,7 +8,7 @@ const CartSlide = () => {
         <SheetTrigger asChild>
           <button className="w-10 h-10 flex items-center justify-center m-0 relative">
             <ShoppingBagIcon className="font-xl text-black" />
-            {/* Conditional Rengerding to be done */}
+            {/* Conditional Rengerding to be done when redux store would be created */}
             <Badge className="absolute top-0 right-0">0</Badge>
           </button>
         </SheetTrigger>
@@ -18,11 +18,11 @@ const CartSlide = () => {
           <div className="overflow-y-auto h-[55vh]">
             <CartCard />
           </div>
-          {/* Setting the Buttons to Bottom */}
+          <Separator />
           <div className="flex justify-evenly items-center flex-col gap-5 py-10">
             <div className="flex justify-center items-end gap-4 flex-col">
               <span className="text-black text-lg font-semibold flex gap-5">Subtotal <p className="text-lg font-bold text-black">Rs. 1000</p></span>
-              <h3 className = 'text-lg font-base text-black'>Taxes and Shipping Calculated at Checkout</h3>
+              <h3 className='text-lg font-base text-black'>Taxes and Shipping Calculated at Checkout</h3>
             </div>
             <Button variant="secondary" size="xl">Checkout</Button>
           </div>

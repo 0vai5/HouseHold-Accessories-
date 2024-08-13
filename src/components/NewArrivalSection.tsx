@@ -9,24 +9,17 @@ import React, {
 import {
   ArrowLeft,
   ArrowRight,
-  X,
+  X
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Image, { ImageProps } from "next/image";
 import { useOutsideClick } from "@/hooks/use-outside-click";
+import {  CardType, CarouselProps } from '@/constants/types';
 
-interface CarouselProps {
-  items: JSX.Element[];
-  initialScroll?: number;
-}
 
-type Card = {
-  src: string;
-  title: string;
-  category: string;
-  content: React.ReactNode;
-};
+
+
 
 export const CarouselContext = createContext<{
   onCardClose: (index: number) => void;
@@ -161,7 +154,7 @@ export const Card = ({
   index,
   layout = false,
 }: {
-  card: Card;
+  card: CardType;
   index: number;
   layout?: boolean;
 }) => {

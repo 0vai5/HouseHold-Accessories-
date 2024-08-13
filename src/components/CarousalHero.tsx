@@ -18,12 +18,33 @@ const CarouselHero = () => {
             className="mb-10"
         >
             <CarouselContent>
-                <CarouselItem className="flex justify-center items-center"><Image src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCY0T8JJ6vmg6edFQQo-EBkeBZoTqiDkTK4bO6yxXXNQ&s'} alt="Banner 1" width={800} height={200} /></CarouselItem>
-                <CarouselItem className="flex justify-center items-center"><Image src={'https://d1iv6qgcmtzm6l.cloudfront.net/banner_desktops/mo8dpf7nHP2BEPDurTRAqfX3xd8pHVePTzh0fsRL.jpg'} alt="Banner 1" width={800} height={200} /></CarouselItem>
-                <CarouselItem className="flex justify-center items-center"><Image src={'https://d1iv6qgcmtzm6l.cloudfront.net/banner_desktops/AwQecmLjoN2Gu9PReNC7CAGh21pUSsfg3BBKyjBF.png'} alt="Banner 1" width={800} height={200} /></CarouselItem>
+                <CarouselItem className="flex justify-center items-center">
+                    <Image
+                        src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCY0T8JJ6vmg6edFQQo-EBkeBZoTqiDkTK4bO6yxXXNQ&s'}
+                        alt="Banner 1"
+                        width={800}
+                        height={200}
+                        priority={true}
+                    />
+                </CarouselItem>
+                <CarouselItem className="flex justify-center items-center">
+                    <Image src={'https://d1iv6qgcmtzm6l.cloudfront.net/banner_desktops/mo8dpf7nHP2BEPDurTRAqfX3xd8pHVePTzh0fsRL.jpg'}
+                        alt="Banner 1"
+                        width={800}
+                        height={200}
+                        priority={true}
+                    />
+                </CarouselItem>
+                <CarouselItem className="flex justify-center items-center">
+                    <Image
+                        src={'https://d1iv6qgcmtzm6l.cloudfront.net/banner_desktops/AwQecmLjoN2Gu9PReNC7CAGh21pUSsfg3BBKyjBF.png'}
+                        priority={true}
+                        alt="Banner 1"
+                        width={800}
+                        height={200}
+                    />
+                </CarouselItem>
             </CarouselContent>
-            {/* <CarouselPrevious />
-            <CarouselNext /> */}
         </Carousel>
     )
 }

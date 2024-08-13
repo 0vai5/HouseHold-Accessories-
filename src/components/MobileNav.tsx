@@ -9,7 +9,6 @@ import Image from "next/image"
 const MobileNav = () => {
   return (
     <section className="block md:hidden">
-      {/* TODO: Setting the Sheet to open from left */}
       <Sheet>
         <SheetTrigger asChild>
           <button className="w-10 h-5 flex items-center justify-center">
@@ -24,6 +23,8 @@ const MobileNav = () => {
                 alt="Company Logo"
                 width={150}
                 height={100}
+                className='h-auto w-auto'
+                priority={true}
               />
             </Link>
           </div>

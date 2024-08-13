@@ -15,7 +15,11 @@ const CartCard: React.FC = () => {
             <div key={item.id} className='flex justify-between md:item-center items-start md:flex-row flex-col gap-10 flex-wrap rounded-lg bg-white shadow-md p-5'>
               <div className='flex justify-between items-center gap-6'>
                 <div className='flex justify-evenly items-center md:flex-row flex-col gap-5'>
-                  <Image src={item.image} alt={item.name} width={100} height={100} />
+                  <Image 
+                  src={item.image} 
+                  alt={item.name} 
+                  width={100} 
+                  height={100} />
                 </div>
                 <div className='self-start'>
                   <h3 className='font-semibold text-black text-lg'>{item.name}</h3>
