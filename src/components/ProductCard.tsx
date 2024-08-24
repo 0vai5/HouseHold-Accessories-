@@ -23,7 +23,7 @@ const ProductCard = () => {
     dispatch(addToCart(cartItem));
 };
   return (
-    <section className='grid grid-cols-4 gap-4 p-4'>
+    <section className='grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 justify-center gap-4 p-4'>
             {products.map((card, index) => (
                 <Card key={index} className='w-[300px] '>
                     <Link key={index} href={'/product/' + card.title}>

@@ -15,7 +15,16 @@ import { Separator } from './ui/separator';
 import CTA from './CTA';
 import ProductList from './ProductList';
 import ProductCard from './ProductCard';
-import SmoothScroll from './SmoothScroll'
+import SmoothScroll from './SmoothScroll';
+import {
+    Menubar,
+    MenubarContent,
+    MenubarItem,
+    MenubarMenu,
+    MenubarSeparator,
+    MenubarShortcut,
+    MenubarTrigger,
+  } from "@/components/ui/menubar"
 import {
     Sheet,
     SheetContent,
@@ -95,5 +104,13 @@ export {
     CTA,
     ProductList,
     ProductCard,
-    SmoothScroll
+    SmoothScroll,
+    Menubar,
+    MenubarContent,
+    MenubarItem,
+    MenubarMenu,
+    MenubarSeparator,
+    MenubarShortcut,
+    MenubarTrigger
+    
 }
