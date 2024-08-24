@@ -12,6 +12,7 @@ import { Badge } from './ui/badge';
 import { Input } from './ui/input';
 import { Label } from './ui/label';
 import { Separator } from './ui/separator';
+import CTA from './CTA';
 import {
     Sheet,
     SheetContent,
@@ -87,5 +88,6 @@ export {
     CarouselPrevious,
     CarousalCard,
     BestSellerSection,
-    Footer
+    Footer,
+    CTA
 }

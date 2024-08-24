@@ -1,4 +1,4 @@
-import { CarousalHero, NewArrivalSection, CarousalCard, BestSellerSection } from '@/components';
+import { CarousalHero, NewArrivalSection, CarousalCard, BestSellerSection, CTA } from '@/components';
 import { product } from '@/constants/types';
 
 const Home = () => {
@@ -51,6 +51,7 @@ const Home = () => {
     <div className='container'>
       <CarousalHero />
       <NewArrivalSection items={[<CarousalCard key="new-arrival-1" products={products} />]} />
+      <CTA />
       <BestSellerSection items={[<CarousalCard key="new-arrival-1" products={products} />]} />
     </div>
   );

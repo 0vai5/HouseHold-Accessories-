@@ -3,9 +3,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
+    // Footer Links correction
     <footer className="w-full">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-           
             <div className="grid grid-cols-2 lg:grid-cols-4 lg:gap-8 gap-12 pt-14 pb-20 max-w-md mx-auto md:max-w-xl lg:max-w-full">
                 <div className="block">
                     <h4 className="text-xl text-black font-bold mb-7">Universal Mart</h4>
