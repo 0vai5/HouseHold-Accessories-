@@ -1,32 +1,31 @@
-'use client'
+import React from 'react'
+import { Card, CardContent, CardHeader, Button } from '@/components'
+import Link from 'next/link'
+import Image from 'next/image'
+import { HeartIcon, ShoppingBagIcon } from 'lucide-react'
+import { useDispatch, useSelector } from 'react-redux'
+import { RootState, AppDispatch } from '@/app/store';
+import { CartItem, product } from '@/constants/types'
+import { addToCart } from '@/features/cart/CartSlice'
 
-import React from 'react';
-import { Button, Card, CardContent, CardHeader } from '@/components';
-import Image from 'next/image';
-import { HeartIcon, ShoppingBagIcon } from 'lucide-react';
-import { CarousalProducts, CartItem, product } from '@/constants/types';
-import Link from 'next/link';
-import { useDispatch } from 'react-redux';
-import { addToCart } from '@/features/cart/CartSlice';
+const ProductCard = () => {
+  const dispatch = useDispatch<AppDispatch>();
+  const { products } = useSelector((state: RootState) => state.products);
 
-const CarousalCard: React.FC<CarousalProducts> = ({ products }) => {
-    const dispatch = useDispatch();
-
-    const HandleAddToCart = (product: product) => {
-        const cartItem: CartItem = {
-            id: product.id,
-            title: product.title,
-            price: product.price,
-            image: product.image,
-            quantity: 1,
-        };
-        dispatch(addToCart(cartItem));
+  const HandleAddToCart = (product: product) => {
+    const cartItem: CartItem = {
+        id: product.id,
+        title: product.title,
+        price: product.price,
+        image: product.image,
+        quantity: 1,
     };
-
-    return (
-        <section className='flex justify-between items-center gap-10'>
+    dispatch(addToCart(cartItem));
+};
+  return (
+    <section className='grid grid-cols-4 gap-4 p-4'>
             {products.map((card, index) => (
-                <Card key={index} className='w-[300px]'>
+                <Card key={index} className='w-[300px] '>
                     <Link key={index} href={'/product/' + card.title}>
                         <CardHeader className='w-full h-[300px] md:h-[275px]'>
                             <div className="relative w-full h-full flex justify-center">
@@ -39,7 +38,7 @@ const CarousalCard: React.FC<CarousalProducts> = ({ products }) => {
                                     priority={true}
                                 />
                                 <div className='cursor-pointer absolute top-4 right-4'>
-                                    <HeartIcon className="h-6 w-6 text-gray-200" />
+                                    <HeartIcon className="h-6 w-6 text-black" />
                                 </div>
                             </div>
                         </CardHeader>
@@ -67,7 +66,7 @@ const CarousalCard: React.FC<CarousalProducts> = ({ products }) => {
                                     className='hover:bg-primary/90 hover:text-white'
                                     onClick={() => HandleAddToCart(card)}
                                 >
-                                    <ShoppingBagIcon className='h-6 w-6 text-slate-700 hover:text-black mr-3' />Add To Bag
+                                    <ShoppingBagIcon className='h-6 w-6 text-slate-700 hover:text-white mr-3' />Add To Bag
                                 </Button>
                             </div>
                         </div>
@@ -75,7 +74,7 @@ const CarousalCard: React.FC<CarousalProducts> = ({ products }) => {
                 </Card>
             ))}
         </section>
-    );
-};
+  )
+}
 
-export default CarousalCard;
+export default ProductCard

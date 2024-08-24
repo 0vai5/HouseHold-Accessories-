@@ -6,6 +6,12 @@ export interface product {
     category: string
 }
 
+export interface ProductState {
+    products: product[];
+    status: 'idle' | 'loading' | 'succeeded' | 'failed';
+    error: string | null;
+  }
+
 export interface CartItem {
     id: string;
     image: string;

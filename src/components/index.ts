@@ -13,6 +13,9 @@ import { Input } from './ui/input';
 import { Label } from './ui/label';
 import { Separator } from './ui/separator';
 import CTA from './CTA';
+import ProductList from './ProductList';
+import ProductCard from './ProductCard';
+import SmoothScroll from './SmoothScroll'
 import {
     Sheet,
     SheetContent,
@@ -89,5 +92,8 @@ export {
     CarousalCard,
     BestSellerSection,
     Footer,
-    CTA
+    CTA,
+    ProductList,
+    ProductCard,
+    SmoothScroll
 }

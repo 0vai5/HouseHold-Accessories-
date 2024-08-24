@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import { Button } from "@/components";
 
 const CTA = () => {
   return (
@@ -27,7 +29,9 @@ const CTA = () => {
                     <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
                         <Image
-                          src={'https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg'}
+                          src={
+                            "https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg"
+                          }
                           alt="product"
                           width="100"
                           height="100"
@@ -35,37 +39,10 @@ const CTA = () => {
                         />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
-                      <Image
-                          src={'https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg'}
-                          alt="product"
-                          width="100"
-                          height="100"
-                          className="h-full w-full object-cover object-center"
-                        />
-                      </div>
-                    </div>
-                    <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                      <div className="h-64 w-44 overflow-hidden rounded-lg">
-                      <Image
-                          src={'https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg'}
-                          alt="product"
-                          width="100"
-                          height="100"
-                          className="h-full w-full object-cover object-center"
-                        />
-                      </div>
-                      <div className="h-64 w-44 overflow-hidden rounded-lg">
-                      <Image
-                          src={'https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg'}
-                          alt="product"
-                          width="100"
-                          height="100"
-                          className="h-full w-full object-cover object-center"
-                        />
-                      </div>
-                      <div className="h-64 w-44 overflow-hidden rounded-lg">
-                      <Image
-                          src={'https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg'}
+                        <Image
+                          src={
+                            "https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg"
+                          }
                           alt="product"
                           width="100"
                           height="100"
@@ -75,8 +52,10 @@ const CTA = () => {
                     </div>
                     <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
-                      <Image
-                          src={'https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg'}
+                        <Image
+                          src={
+                            "https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg"
+                          }
                           alt="product"
                           width="100"
                           height="100"
@@ -84,8 +63,45 @@ const CTA = () => {
                         />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
-                      <Image
-                          src={'https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg'}
+                        <Image
+                          src={
+                            "https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg"
+                          }
+                          alt="product"
+                          width="100"
+                          height="100"
+                          className="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                      <div className="h-64 w-44 overflow-hidden rounded-lg">
+                        <Image
+                          src={
+                            "https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg"
+                          }
+                          alt="product"
+                          width="100"
+                          height="100"
+                          className="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                    </div>
+                    <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                      <div className="h-64 w-44 overflow-hidden rounded-lg">
+                        <Image
+                          src={
+                            "https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg"
+                          }
+                          alt="product"
+                          width="100"
+                          height="100"
+                          className="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                      <div className="h-64 w-44 overflow-hidden rounded-lg">
+                        <Image
+                          src={
+                            "https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg"
+                          }
                           alt="product"
                           width="100"
                           height="100"
@@ -97,12 +113,9 @@ const CTA = () => {
                 </div>
               </div>
 
-              <a
-                href="#"
-                className="inline-block rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
-              >
-                Shop Collection
-              </a>
+              <Link href={"#"}>
+                <Button size={'xl'} variant={'outline'}>Shop Collection</Button>
+              </Link>
             </div>
           </div>
         </div>
