@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <header className={'header glassmorphism'}>
             <div className='flex items-center justify-between p-4'>
-                <div className="md:hidden block flex items-center">
+                <div className="md:hidden flex items-center">
                     <MobileNav />
                 </div>
                 <Link href={'/'}>

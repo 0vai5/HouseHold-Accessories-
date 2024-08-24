@@ -28,16 +28,15 @@ const CarouselHero = () => {
                     />
                 </CarouselItem>
                 <CarouselItem className="flex justify-center items-center">
-                    <Image src={'https://d1iv6qgcmtzm6l.cloudfront.net/banner_desktops/mo8dpf7nHP2BEPDurTRAqfX3xd8pHVePTzh0fsRL.jpg'}
+                    <Image src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCY0T8JJ6vmg6edFQQo-EBkeBZoTqiDkTK4bO6yxXXNQ&s'}
                         alt="Banner 1"
                         width={800}
                         height={200}
-                        priority={true}
                     />
                 </CarouselItem>
                 <CarouselItem className="flex justify-center items-center">
                     <Image
-                        src={'https://d1iv6qgcmtzm6l.cloudfront.net/banner_desktops/AwQecmLjoN2Gu9PReNC7CAGh21pUSsfg3BBKyjBF.png'}
+                        src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCY0T8JJ6vmg6edFQQo-EBkeBZoTqiDkTK4bO6yxXXNQ&s'}
                         priority={true}
                         alt="Banner 1"
                         width={800}
