@@ -13,7 +13,6 @@ import { Input } from './ui/input';
 import { Label } from './ui/label';
 import { Separator } from './ui/separator';
 import CTA from './CTA';
-import ProductList from './ProductList';
 import ProductCard from './ProductCard';
 import SmoothScroll from './SmoothScroll';
 import {
@@ -59,7 +58,7 @@ import {
     CarouselPrevious
 } from './ui/carousel';
 import { BestSellerSection } from './BestSellerSection';
-
+import ProductList from './ProductList'
 export {
     CarousalHero,
     CartCard,
@@ -102,7 +101,6 @@ export {
     BestSellerSection,
     Footer,
     CTA,
-    ProductList,
     ProductCard,
     SmoothScroll,
     Menubar,
@@ -111,6 +109,6 @@ export {
     MenubarMenu,
     MenubarSeparator,
     MenubarShortcut,
-    MenubarTrigger
-    
+    MenubarTrigger,
+    ProductList
 }
