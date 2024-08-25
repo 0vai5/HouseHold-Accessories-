@@ -12,6 +12,10 @@ export interface ProductState {
     error: string | null;
   }
 
+  export interface ProductCardProps {
+    products: product[];
+  }
+
 export interface CartItem {
     id: string;
     image: string;

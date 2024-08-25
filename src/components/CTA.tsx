@@ -114,7 +114,7 @@ const CTA = () => {
               </div>
 
               <Link href={"#"}>
-                <Button size={'xl'} variant={'outline'}>Shop Collection</Button>
+                <Button size={'lg'} variant={'outline'}>Shop Collection</Button>
               </Link>
             </div>
           </div>
