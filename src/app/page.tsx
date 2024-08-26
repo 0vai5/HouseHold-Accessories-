@@ -1,8 +1,8 @@
 import { CarousalHero, NewArrivalSection, CarousalCard, BestSellerSection, CTA } from '@/components';
-import { product } from '@/constants/types';
+import { Product } from '@/constants/types';
 
 const Home = () => {
-  const products: product[] = [
+  const products: Product[] = [
     {
       id: '1',
       image: '/Unimart.png',
