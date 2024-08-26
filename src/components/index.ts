@@ -15,6 +15,7 @@ import { Separator } from './ui/separator';
 import CTA from './CTA';
 import ProductCard from './ProductCard';
 import SmoothScroll from './SmoothScroll';
+import ProductFilter from './ProductFilter';
 import {
     Menubar,
     MenubarContent,
@@ -110,5 +111,6 @@ export {
     MenubarSeparator,
     MenubarShortcut,
     MenubarTrigger,
-    ProductList
+    ProductList,
+    ProductFilter
 }
