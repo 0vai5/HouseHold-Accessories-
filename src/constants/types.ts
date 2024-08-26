@@ -1,23 +1,26 @@
-export interface product {
-    id: string;
+export type Product = {
+// Future mein String hoga id
+    id: number;
     title: string;
-    image: string;
     price: number;
-    category: string
-}
+    description: string;
+    category: string;
+    image: string;
+    href: string;
+  };
 
 export interface ProductState {
-    products: product[];
+    products: Product[];
     status: 'idle' | 'loading' | 'succeeded' | 'failed';
     error: string | null;
   }
 
   export interface ProductCardProps {
-    products: product[];
+    products: Product[];
   }
 
 export interface CartItem {
-    id: string;
+    id: number;
     image: string;
     title: string;
     price: number;
@@ -25,7 +28,7 @@ export interface CartItem {
 }
 
 export interface CarousalProducts {
-    products: product[]
+    products: Product[]
 }
 
 export type CardType = {

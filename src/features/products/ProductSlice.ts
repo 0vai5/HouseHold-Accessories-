@@ -1,4 +1,4 @@
-import { product, ProductState } from '@/constants/types';
+import { Product, ProductState } from '@/constants/types';
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
 
 // Define the product type based on the API response structure
@@ -8,12 +8,12 @@ import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
 
 
 // Define the async thunk
-export const fetchProducts = createAsyncThunk<product[]>(
+export const fetchProducts = createAsyncThunk<Product[]>(
   'products/fetchProducts',
   async () => {
     const response = await fetch('https://fakestoreapi.com/products');
     const data = await response.json();
-    return data as product[];
+    return data as Product[];
   }
 );
 
@@ -31,7 +31,7 @@ const productSlice = createSlice({
       .addCase(fetchProducts.pending, (state) => {
         state.status = 'loading';
       })
-      .addCase(fetchProducts.fulfilled, (state, action: PayloadAction<product[]>) => {
+      .addCase(fetchProducts.fulfilled, (state, action: PayloadAction<Product[]>) => {
         state.status = 'succeeded';
         state.products = action.payload;
       })
