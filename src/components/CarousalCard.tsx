@@ -4,7 +4,7 @@ import React from 'react';
 import { Button, Card, CardContent, CardHeader } from '@/components';
 import Image from 'next/image';
 import { HeartIcon, ShoppingBagIcon } from 'lucide-react';
-import { CarousalProducts, CartItem, product } from '@/constants/types';
+import { CarousalProducts, CartItem, Product } from '@/constants/types';
 import Link from 'next/link';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '@/features/cart/CartSlice';
@@ -12,7 +12,7 @@ import { addToCart } from '@/features/cart/CartSlice';
 const CarousalCard: React.FC<CarousalProducts> = ({ products }) => {
     const dispatch = useDispatch();
 
-    const HandleAddToCart = (product: product) => {
+    const HandleAddToCart = (product: Product) => {
         const cartItem: CartItem = {
             id: product.id,
             title: product.title,
@@ -40,7 +40,7 @@ const CarousalCard: React.FC<CarousalProducts> = ({ products }) => {
               <div className="mt-4 flex justify-between">
                 <div>
                   <h3 className="text-sm text-gray-700">
-                    <Link href={`/product/${product.id}`}>
+                    <Link href={product.href}>
                       <span aria-hidden="true" className="absolute inset-0" />
                       {product.title}
                     </Link>

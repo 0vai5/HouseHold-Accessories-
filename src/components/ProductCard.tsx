@@ -16,7 +16,7 @@ const ProductCard: React.FC<ProductCardProps & { wishlist: boolean }> = ({
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {products.map((product) => (
             <div key={product.id} className="group relative">
-              <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+              <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80 relative">
                 <Image
                   alt={product.title}
                   src={product.image}
@@ -24,6 +24,9 @@ const ProductCard: React.FC<ProductCardProps & { wishlist: boolean }> = ({
                   height={100}
                   className="lg:h-full lg:w-full"
                 />
+                <div className="absolute top-1 right-1">
+                  <HeartIcon className='text-black h-6 w-6' />
+                </div>
               </div>
               <div className="mt-4 flex justify-between">
                 <div>

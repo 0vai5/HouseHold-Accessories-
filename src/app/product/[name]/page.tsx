@@ -60,7 +60,7 @@ export default function Example() {
 
     <div className="bg-white">
       <div className="pt-6">
-
+        {/* BreadCrumbs */}
         {/* Image gallery */}
         <div className="mx-auto mt-6 max-w-2xl sm:px-6  lg:max-w-7xl  lg:gap-x-8 lg:px-8">
           <div className="flex justify-center items-center">
