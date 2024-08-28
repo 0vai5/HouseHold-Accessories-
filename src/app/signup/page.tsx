@@ -1,61 +1,80 @@
-import Link from "next/link"
+import react from 'react';
+import Image from 'next/image';
+import { Label, Input, Button } from '@/components'
+import Link from 'next/link';
 
-import { Button } from "@/components/ui/button"
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-
-export default function signup() {
+const Signup = () => {
   return (
-    <Card className="mx-auto max-w-sm mt-10">
-      <CardHeader>
-        <CardTitle className="text-xl">Sign Up</CardTitle>
-        <CardDescription>
-          Enter your information to create an account
-        </CardDescription>
-      </CardHeader>
-      <CardContent>
-        <div className="grid gap-4">
-          <div className="grid grid-cols-2 gap-4">
-            <div className="grid gap-2">
-              <Label htmlFor="first-name">First name</Label>
-              <Input id="first-name" placeholder="Max" required />
-            </div>
-            <div className="grid gap-2">
-              <Label htmlFor="last-name">Last name</Label>
-              <Input id="last-name" placeholder="Robinson" required />
-            </div>
-          </div>
-          <div className="grid gap-2">
-            <Label htmlFor="email">Email</Label>
-            <Input
-              id="email"
-              type="email"
-              placeholder="m@example.com"
-              required
-            />
-          </div>
-          <div className="grid gap-2">
-            <Label htmlFor="password">Password</Label>
-            <Input id="password" type="password" />
-          </div>
-          <Button type="submit" className="w-full">
-            Create an account
-          </Button>
+    <section>
+      <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
+        <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+          <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+            Create an Account
+          </h2>
         </div>
-        <div className="mt-4 text-center text-sm">
-          Already have an account?{" "}
-          <Link href="/signin" className="underline">
-            Sign in
-          </Link>
+
+        <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+          <form className="space-y-6">
+            <div>
+              <Label>
+                Email address
+              </Label>
+              <div className="mt-2">
+                <Input
+                  type="email"
+                />
+              </div>
+            </div>
+
+            <div>
+              <Label>
+                Phone Number
+              </Label>
+              <div className="mt-2">
+                <Input
+                  type="number"
+                />
+              </div>
+            </div>
+            <div>
+              <Label>
+                password
+              </Label>
+              <div className="mt-2">
+                <Input
+                  type="password"
+                />
+              </div>
+            </div>
+
+            <div>
+                <Label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
+                  Confirm Passowrd
+                </Label>
+                <Input
+                  type="password"
+                />
+            </div>
+
+            <div className='flex justify-center items-center'>
+              <Button
+              size={'xl'}
+              >
+                Sign up
+              </Button>
+            </div>
+          </form>
+
+          <p className="mt-10 text-center text-sm text-gray-500">
+            Already have an account?{' '}
+            <Link href="/signin" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+              Sign In
+            </Link>
+          </p>
         </div>
-      </CardContent>
-    </Card>
+      </div>
+    </section>
   )
 }
+
+export default Signup;
